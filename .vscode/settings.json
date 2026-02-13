@@ -1,0 +1,42 @@
+{
+    // Most settings from https://paulwintz.com/latex-in-vscode/
+ "files.defaultLanguage": "latex",
+ "files.associations": {
+      "*.sty": "latex",
+      "*.cls": "latex"
+  },
+   "files.exclude": {
+      "**/*.4ct": true,
+      "**/*.4tc": true,
+      "**/*.fdb_latexmk": true,
+      "**/*.idv": true,
+      "**/*.lg": true,
+      "**/*.lof": true,
+      "**/*.synctex.gz": true,
+      "**/*.synctex(busy)": true,
+      "**/*.tmp": true,
+      "**/*.xref": true,
+      "**/*.fls": true,
+      "**/*.loc": true,
+      "**/*.run.xml": true,
+      "**/*.soc": true,
+      "**/*.snm": true,
+      "**/*.blg": true,
+      "**/*-SAVE-ERROR": true
+    },
+    "latex-workshop.latex.outDir": "%DIR%/build",
+    "latex-workshop.latex.clean.subfolder.enabled": true,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.view.pdf.internal.synctex.keybinding": "double-click",
+
+    // Image pasting
+    "pasteImage.path": "${currentFileDir}/images",
+    "pasteImage.insertPattern": 
+  "\\begin{center}\n\t\t\\includegraphics[width=\\linewidth]{images/${imageFileName}}\n\t\\end{center}",
+  "pasteImage.showFilePathConfirmInputBox": true,
+  "pasteImage.filePathConfirmInputBoxMode": "onlyName",
+  "pasteImage.defaultName": "${currentFileNameWithoutExt}-HH-mm-ss",
+  "pasteImage.encodePath": "none",
+  "pasteImage.basePath": "${currentFileDir}"
+
+}
