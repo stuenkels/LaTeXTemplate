@@ -1,0 +1,6 @@
+# Ignore all files in build
+/build/*
+
+# Keep the pdf and gitkeep file
+!/build/main.pdf
+!/build/.gitkeep
